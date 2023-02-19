@@ -67,7 +67,7 @@ export default class Matrix {
         }
 
         return returnMatrix;
-    };
+    }
 
     /**
      * Performs forward elimination for GJ elimination to form an upper right triangle matrix
@@ -105,7 +105,7 @@ export default class Matrix {
             }
         }
         return matrix;
-    };
+    }
 
     /**
      * THIS METHOD ACTS LIKE A CONTROLLER AND PERFORMS ALL THE NECESSARY STEPS OF GJ ELIMINATION TO PRODUCE
@@ -136,7 +136,7 @@ export default class Matrix {
 
         for (let i = 0; i < rows; i++) {
             for (let j = 0; j < cols; j++) {
-                if (j == i) {
+                if (j === i) {
                     identityMatrix[i][j] = 1;
                 } else {
                     identityMatrix[i][j] = 0;
@@ -157,7 +157,7 @@ export default class Matrix {
         const numCols1 = matrix1[0].length;
         const numRows2 = matrix2.length;
 
-        if (numCols1 != numRows2) {
+        if (numCols1 !== numRows2) {
             return false;
         }
 
@@ -170,7 +170,7 @@ export default class Matrix {
             }
         }
         return product;
-    };
+    }
 
     /**
      * performs multiplication for an individual matrix cell
@@ -206,7 +206,7 @@ export default class Matrix {
 
         for (let i = 0; i < rows; i++) {
             for (let j = 0; j < cols; j++) {
-                if (i == rowNum) {
+                if (i === rowNum) {
                     mMatrix[i][j] = anyMatrix[i][j] * multiplier;
                 } else {
                     mMatrix[i][j] = anyMatrix[i][j];

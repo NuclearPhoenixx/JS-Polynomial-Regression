@@ -1,5 +1,5 @@
-import Matrix from "./Matrix";
-import DataPoint from "./DataPoint";
+import Matrix from './Matrix.js';
+import DataPoint from './DataPoint.js';
 
 /**
  * The constructor for a PolynomialRegression object an example of it's usage is below
