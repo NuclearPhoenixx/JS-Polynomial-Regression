@@ -14,20 +14,20 @@
   "bugs": "https://github.com/RobertMenke/JS-Polynomial-Regression/issues",
   "main": "dist/PolynomialRegression.js",
   "devDependencies": {
-    "@babel/cli": "^7.0.0",
-    "@babel/core": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
-    "babel-loader": "^8.0.6",
-    "d3": "3.5.5",
-    "nvd3": "^1.8.5",
-    "webpack": "^4.35.3",
-    "webpack-cli": "^3.3.5"
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "babel-loader": "^9.1.3",
+    "d3": "7.8.5",
+    "nvd3": "^1.8.6",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
   },
   "scripts": {
-    "start:dev": "NODE_ENV=development webpack --progress --watch --mode development",
-    "start:example:dev": "NODE_ENV=development webpack --progress --watch --config weback.example.config.js --mode development",
-    "build": "NODE_ENV=production webpack --progress --mode production",
-    "build:example": "NODE_ENV=production webpack --progress --config weback.example.config.js --mode production",
+    "start:dev": "webpack --progress --watch --mode development",
+    "start:example:dev": "webpack --progress --watch --config weback.example.config.js --mode development",
+    "build": "webpack --progress --mode production",
+    "build:example": "webpack --progress --config weback.example.config.js --mode production",
     "build:all": "npm run build && npm run build:example"
   }
 }
