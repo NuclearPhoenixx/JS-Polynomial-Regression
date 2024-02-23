@@ -1,6 +1,6 @@
 # JS Polynomial Regression
 
-**Updated library with added compressed files (`.min.js`) and optional typescript type declaration files if you need them.**
+**Updated library with optional typescript type declaration files if you need them.**
 
 This library can make predictions about data using a technique called polynomial regression.
 
