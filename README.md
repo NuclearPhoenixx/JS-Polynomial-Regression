@@ -1,12 +1,12 @@
-![alt tag](/example/polynomial_regression_example.png)
+# JS Polynomial Regression
 
-# About
+**Updated library with added compressed files (`.min.js`) and optional typescript type declaration files if you need them.**
 
 This library can make predictions about data using a technique called polynomial regression.
 
 Polynomial regression uses a technique called Gaussian-Jordan elimination, which creates a predictive model that more accurately fits non-linear data.
 
-# How to use
+## How to use
 
 Let's say you have your typical cartesian coordinates (x and y coordinates)
 
